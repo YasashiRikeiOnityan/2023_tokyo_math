@@ -1,0 +1,140 @@
+\documentclass[10pt,a4paper,dvipdfmx,fleqn]{report}
+%%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%%
+\usepackage[top=25mm,bottom=25mm,left=20mm,right=20mm]{geometry}
+\usepackage{graphicx} 
+\usepackage{xcolor}
+\usepackage{titlesec} 
+\usepackage{lipsum} %just to generate text for the example
+\usepackage{amsmath,amsthm,amssymb,esvect,amsfonts,fancybox,tikz,tikz-3dplot,ulem,fancyhdr,proof}
+\usepackage{../str/eclbkbox,okumacro,../str/ascolorbox,pgfplots,subfiles}
+\usetikzlibrary{patterns,intersections,calc,quotes,angles,arrows.meta,positioning,graphs,through,shapes.geometric}
+\tcbuselibrary{raster,skins,theorems,breakable}
+\allowdisplaybreaks
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+\hypersetup{% hyperrefオプションリスト
+    setpagesize=false,
+    bookmarksnumbered=true,%
+    bookmarksopen=true,%
+    colorlinks=true,%
+    linkcolor=black,
+    citecolor=red,
+}
+\usepackage{ceo}
+\usepackage{epic,eepic,emath,emathW,emathB,emathBk,emathMw,emathCap,emathE}
+%%%%%%%%%%%%%%% settings %%%%%%%%%%%%%%%
+% =,→ 間の余白
+\thickmuskip=1.0\thickmuskip
+% +,- 間の余白
+\medmuskip=0.8\medmuskip
+% … などの装飾記号の余白
+\thinmuskip=0.8\thinmuskip
+% 行列を詰める
+\arraycolsep=0.3\arraycolsep
+% 数式の上下のスペースの変更
+\AtBeginDocument{
+    \abovedisplayskip     =0.5\abovedisplayskip
+    \abovedisplayshortskip=0.5\abovedisplayshortskip
+    \belowdisplayskip     =0.5\belowdisplayskip
+    \belowdisplayshortskip=0.5\belowdisplayshortskip}
+\newcommand*\HUGE{\Huge}
+\newcommand*\chapnamefont{\normalfont\LARGE\MakeUppercase}
+\newcommand*\chapnumfont{\normalfont\HUGE}
+\newcommand*\chaptitlefont{\normalfont\HUGE\bfseries}
+
+\newlength\beforechapskip
+\newlength\midchapskip
+\setlength\midchapskip{\paperwidth}
+\addtolength\midchapskip{-\textwidth}
+\addtolength\midchapskip{-\oddsidemargin}
+\addtolength\midchapskip{-1in}
+\setlength\beforechapskip{18mm}
+
+\titleformat{\chapter}[display]
+    {\normalfont\filleft}
+    {{\chapnamefont\chaptertitlename}%
+    \color[rgb]{.53,.8,.92}
+    \makebox[20mm][l]{\hspace{.8em}%
+    \resizebox{!}{\beforechapskip}{\chapnumfont\thechapter}%
+    \hspace{.8em}%
+    \rule{\midchapskip}{\beforechapskip}%
+    }%
+    }%
+    {25pt}
+    {\chaptitlefont}
+\titlespacing*{\chapter}{0pt}{40pt}{40pt}
+
+\definecolor{myBlue}{rgb}{.53,.8,.92}
+\definecolor{myBlue2}{rgb}{0,0,.52}
+\newcommand{\sectionformat}[1]{%
+    \begin{tikzpicture}[baseline=(title.base)]
+        \node (title) {\thesection\hspace{1em}#1};
+        %\draw[double] (title.west) |- (title.south) (title.north) -| (title.east);
+        %\draw[double] (title.south) -| (title.east);
+        \fill [myBlue] (title.west) -- ++(0,-.25) -- ++(-.2,0) -- ++(0,.6) -- ++(.2,0) -- cycle;
+        \coordinate (A) at ($(title.west)+(0cm,-.25cm)$);
+        \coordinate (B) at ($(A)+(10cm,0cm)$);
+        \coordinate (C) at ($(A)!(title.east)!(B)$);
+        \draw [myBlue,very thick] (A) -- ++(-.2,0) -- (C);
+    \end{tikzpicture}
+}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{\sectionformat}%
+
+\definecolor{titlepagecolor}{rgb}{.53,.8,.92}
+\definecolor{namecolor}{rgb}{.27,.51,.7} 
+
+\newtcbtheorem[number within=section]{mytheo}{定理}%
+    {fonttitle=\gtfamily\sffamily\bfseries\upshape,
+    colframe=myBlue,colback=myBlue!2!white,
+    rightrule=0pt,leftrule=0pt,bottomrule=2pt,
+    colbacktitle=myBlue,theorem style=standard,breakable,arc=0pt}{tha}
+%%%%%%%%%%%%%%% document %%%%%%%%%%%%%%%
+\begin{document}
+
+    \subfile{../subfiles/titlepage/title}
+
+    \tableofcontents
+    \setcounter{chapter}{-1}
+
+    \chapter{はじめに}
+        \subfile{../subfiles/chapter0/section1/0-1}
+        \subfile{../subfiles/chapter0/section2/0-2}
+
+    \chapter{第1問}
+        \subfile{../subfiles/chapter1/section1/1-1}
+        \subfile{../subfiles/chapter1/section2/1-2}
+        \subfile{../subfiles/chapter1/section3/1-3}
+        \subfile{../subfiles/chapter1/section4/1-4}
+    
+    \chapter{第2問}
+        \subfile{../subfiles/chapter2/section1/2-1}
+        \subfile{../subfiles/chapter2/section2/2-2}
+        \subfile{../subfiles/chapter2/section3/2-3}
+        \subfile{../subfiles/chapter2/section4/2-4}
+
+    \chapter{第3問}
+        \subfile{../subfiles/chapter3/section1/3-1}
+        \subfile{../subfiles/chapter3/section2/3-2}
+        \subfile{../subfiles/chapter3/section3/3-3}
+        \subfile{../subfiles/chapter3/section4/3-4}
+
+    \chapter{第4問}
+        \subfile{../subfiles/chapter4/section1/4-1}
+        \subfile{../subfiles/chapter4/section2/4-2}
+        \subfile{../subfiles/chapter4/section3/4-3}
+        \subfile{../subfiles/chapter4/section4/4-4}
+    
+    \chapter{第5問}
+        \subfile{../subfiles/chapter5/section1/5-1}
+        \subfile{../subfiles/chapter5/section2/5-2}
+        \subfile{../subfiles/chapter5/section3/5-3}
+        \subfile{../subfiles/chapter5/section4/5-4}
+
+    \chapter{第6問}
+        \subfile{../subfiles/chapter6/section1/6-1}
+        \subfile{../subfiles/chapter6/section2/6-2}
+        \subfile{../subfiles/chapter6/section3/6-3}
+        \subfile{../subfiles/chapter6/section4/6-4}
+
+\end{document}
