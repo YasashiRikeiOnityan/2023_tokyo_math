@@ -9,32 +9,32 @@
             本問では不等式評価をするのみであるので，一旦は置いておきます．絶対値の中に注目してみましょう．$\sin{(x^2)}$は
             $f(x)=\sin{x},~g(x)=x^2$としたときの合成関数$f(g(x))$になっています．被積分関数が合成関数になっているとき，
             $t=g(x)$と置換するとうまくいくことが多いです（経験則です）．}\\
-            $t=x^2$と置換すると
+            $t=x^2$と置換する．積分区間を考えると$x>0$であることから，$x=\sqrt{t}$であることが分かる．
             \begin{align*}
-                A_k=\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{t}}
-                \quad\quad\quad
+                \yueni~~A_k=\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{t}}
+                \quad\quad\quad\quad\quad
                 \begin{tabular}{|c|c|} \hline
                     $x$ & $\sqrt{k\pi}\to\sqrt{(k+1)\pi}$\bsityuu \\ \hline
                     $t$ & $k\pi\to(k+1)\pi$\bsityuu \\ \hline
                 \end{tabular}
-                \quad \bunsuu{dt}{dx}=2x=2\sqrt{t}
+                \quad\quad \bunsuu{dt}{dx}=\bunsuu{1}{2\sqrt{t}}
             \end{align*}
-            \textcolor{myBlue2}{ほら，積分区間，被積分関数の両方とも見た目がスッキリしたでしょう？次に考えるべきは，積分の不等式評価です．
-            積分区間は$(0<)~k\pi\leq t\leq(k+1)\pi$となっています．これは，$t$の最大値が$(k+1)\pi$で最小値が$k\pi$であることを表しています．したがって，
-            $0<k\pi\leq t\leq(k+1)\pi \eqnum{a}$より}
+            \textcolor{myBlue2}{ほら！積分区間，被積分関数の両方とも見た目がスッキリしたでしょう？次に考えるべきは，積分の不等式評価です．
+            積分区間は$k\pi\leq t\leq(k+1)\pi$となっています．これより$t$の最大値が$(k+1)\pi$で最小値が$k\pi$であることが分かります．したがって，
+            $0<k\pi\leq t\leq(k+1)\pi$より}
             \begin{align*}
                 \textcolor{myBlue2}{\bunsuu{1}{(k+1)\pi}\leq \bunsuu{1}{t}\leq \bunsuu{1}{k\pi}\Y \bunsuu{1}{\sqrt{(k+1)\pi}}\leq \bunsuu{1}{\sqrt{t}}\leq \bunsuu{1}{\sqrt{k\pi}}~\sdots\sdots~\maruichi}
             \end{align*}
-            \textcolor{myBlue2}{が得られます．見えてきましたか？}\\
-            ゆえに\textcolor{myBlue2}{（$\maruichi$と$\emabs{\sin{t}\geq 0}$より）}
+            \textcolor{myBlue2}{が得られます．示すべき不等式の形が見えてきました！}\\
+            ゆえに\textcolor{myBlue2}{（$\maruichi$と$\emabs{\sin{t}}\geq 0$より）}
             \begin{align*}
                 &\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{(k+1)\pi}}\leq \dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{t}} \leq \dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{k\pi}}\\
                 &\yueni~~\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{(k+1)\pi}}\leq A_k \leq \dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{k\pi}} \\
                 &\yueni~~\bunsuu{1}{2\sqrt{(k+1)\pi}}\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt\leq A_k \leq \bunsuu{1}{2\sqrt{k\pi}}\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt
             \end{align*}
             \textcolor{myBlue2}{被積分関数$\bunsuu{\emabs{\sin{t}}}{2\sqrt{t}}$のうち，分子の$\sqrt{t}$の部分のみ不等式で評価をしました．分母の$\emabs{\sin{t}}$も同様にやったらどうでしょう？
-            より式が複雑になってしまいそうです．ここまで来たら，$\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt=2$となることが示れば証明完了ですね．$\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt$は$y=\emabs{\sin{t}}$
-            のうち，下図の斜線部のようにお山1つ分の面積と等しくなります．（お山1つ分の面積が2になることは覚えておきましょう！）}
+            より式が複雑になってしまいそうです．ここまで来たら，$\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt=2$となることが示されれば証明完了ですね．周期性から，$\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt$の値は$y=\emabs{\sin{t}}$
+            のお山1つ分（下図の斜線部）の面積と等しくなります．（お山1つ分の面積が2になることは覚えておきましょう！）}
 
             \begin{figure}[htbp]
                 \centering
@@ -62,10 +62,10 @@
             \begin{align*}
                 \bunsuu{1}{\sqrt{(k+1)\pi}}\leq A_k \leq \bunsuu{1}{\sqrt{k\pi}}\owari
             \end{align*}
-            \item [\kakkoni] \textcolor{myBlue2}{$B_n$は$A_k$と形は似ていますが，少々異なる部分があります．したがって，$B_n$を$A_k$を用いて
+            \item [\kakkoni] \textcolor{myBlue2}{$B_n$は$A_k$と形は似ていますが，少々異なる部分があります．まずは，$B_n$を$A_k$を用いて
             表すことから始めましょう．慣れている人は素早く変形できるかもしれませんが，ここではそのような{\bf プロ}の頭の中を覗いてみましょう．
             文字で一般化されている場合は，具体的な数字を当てはめることで考えやすくなります．ここで，$B_n$の$\bunsuu{1}{\sqrt{n}}$は邪魔なので，それを除いた
-            $\dint{\sqrt{n\pi}}{\sqrt{2n\pi}}\emabs{\sin{(x^2)}}dx$を${B_n}^\prime$と置きます．
+            部分である$\dint{\sqrt{n\pi}}{\sqrt{2n\pi}}\emabs{\sin{(x^2)}}dx$を${B_n}^\prime$と置きます．
             \begin{enumerate}
                 \item [\tokeiichi] $n=1$のとき
                 \begin{align*}
@@ -94,7 +94,7 @@
             \begin{align*}
                 \bunsuu{1}{\sqrt{n}}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k+1)\pi}}\leq B_n\leq \bunsuu{1}{\sqrt{n}}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{k\pi}}~\sdots\sdots~\maruni
             \end{align*}
-            \textcolor{myBlue2}{この不等式$\maruni$が得られたら，あとは両側の極限をとりはさみうつだけです（簡単なわけではないです）．まずは，形がシンプルな
+            \textcolor{myBlue2}{この不等式$\maruni$が得られたら，あとは両側の極限をとってはさみうつだけです（簡単なわけではないです）．まずは，形がシンプルな
             最右辺の極限を考えてみましょう．} \\
             $\maruni$の最右辺について，区分求積法の原理より
             \begin{align*}
@@ -112,7 +112,7 @@
             \hypersetup{
                 linkcolor=myBlue2,
             }
-            \textcolor{myBlue2}{ですね．こちらの形に寄せていくと
+            \textcolor{myBlue2}{ですね．こちらの形に寄せていく（$1/n$と$k/n$の形をつくる）と
             \begin{align*}
                 \dlim{n\to\infty}\bunsuu{1}{\sqrt{n}}\retuwa{k=n}{2n-1}\bunsuu{1}{k\pi}=\dlim{n\to\infty}\bunsuu{1}{n}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k/n)\pi}}
             \end{align*}
@@ -125,7 +125,7 @@
                 \bunsuu{1}{n}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k/n)\pi}}=\bunsuu{1}{n}\p{\bunsuu{1}{\sqrt{(n/n)\pi}}+\bunsuu{1}{\sqrt{((n+1)/n)\pi}}+\sdots+\bunsuu{1}{\sqrt{((2n-1)/n)\pi}}}~\sdots\sdots~\marushi
             \end{align*}
             $\marushi$式は以下の網目部の面積を表しています．}
-        
+            
             \begin{figure}[htbp]
                 \centering
                 \textcolor{myBlue2}{
@@ -152,7 +152,7 @@
                 }
             \end{figure}
 
-            \textcolor{myBlue2}{そして，$1\leq x\leq 2$の範囲で$n$等分された長方形の横の長さを無限に小さくしていく（$n\to\infty$とする）と，
+            \textcolor{myBlue2}{そして，$1\leq x\leq 2$の範囲で$n$等分された長方形の横の長さ$1/n$を無限に小さくしていく（$n\to\infty$とする）と，
             面積は$\dint{1}{2}\bunsuu{1}{\sqrt{\pi x}}$に収束します．（詳細な議論は区分求積法を学んだ教材を復習してください．）したがって
             \begin{align*}
                 \dlim{n\to\infty}\bunsuu{1}{n}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k/n)\pi}}=\dint{1}{2}\bunsuu{1}{\sqrt{\pi x}}
@@ -160,7 +160,7 @@
             を得ます．それでは，続いて不等式$\maruni$の最左辺について考えてみましょう．} \\
             $\maruni$の最左辺について，区分求積法の原理より
             \begin{align*}
-                \dlim{n\to\infty}\bunsuu{1}{\sqrt{n}}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k+1)\pi}}&=\dlim{n\to\infty}\bunsuu{1}{\sqrt{n}}\retuwa{k=n+1}{2n}\bunsuu{1}{\sqrt{(k+1)\pi}}=\dlim{n\to\infty}\bunsuu{1}{n}\retuwa{k=n+1}{2n}\bunsuu{1}{\sqrt{(k/n)\pi}} \\
+                \dlim{n\to\infty}\bunsuu{1}{\sqrt{n}}\retuwa{k=n}{2n-1}\bunsuu{1}{\sqrt{(k+1)\pi}}&=\dlim{n\to\infty}\bunsuu{1}{\sqrt{n}}\retuwa{k=n+1}{2n}\bunsuu{1}{\sqrt{k\pi}}=\dlim{n\to\infty}\bunsuu{1}{n}\retuwa{k=n+1}{2n}\bunsuu{1}{\sqrt{(k/n)\pi}} \\
                 &=\dint{1}{2}\bunsuu{1}{\sqrt{\pi x}}\,dx=\bunsuu{2(\sqrt{2}-1)}{\sqrt{\pi}}~\sdots\sdots~\marugo
             \end{align*}
             \textcolor{myBlue2}{以下が参考図です．}

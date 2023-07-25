@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  24 JUL 2023 13:22
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  25 JUL 2023 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,7 +598,7 @@ rs
 \@LabelPart=\box90
 \ResultBox=\box91
 )
-(../../../doc//../str/eclbkbox.sty
+(../../../doc//../sty/eclbkbox.sty
 \bk@bxb=\box92
 \bk@bxa=\box93
 \bk@lcnt=\count304
@@ -611,9 +611,9 @@ LaTeX Info: Redefining \yen on input line 120.
 \EXAMPLEWIDTH=\dimen310
 \shaderule=\dimen311
 )
-(../../../doc//../str/ascolorbox.sty
+(../../../doc//../sty/ascolorbox.sty
 
-LaTeX Warning: You have requested package `../../../doc//../str/ascolorbox',
+LaTeX Warning: You have requested package `../../../doc//../sty/ascolorbox',
                but the package provides `ascolorbox'.
 
 Package: ascolorbox 2019/4/30, Version 1.0.3
@@ -1772,8 +1772,7 @@ Package: emathCap 2011/11/10 v0.02
 \beforechapskip=\skip103
 \midchapskip=\skip104
 \c@tcb@cnt@mytheo=\count436
-))
-No file 1-3.aux.
+)) (./1-3.aux)
 \openout1 = `1-3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ceo/m/it on input line 2.
@@ -1798,6 +1797,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
+
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvipdfm
@@ -1838,11 +1838,10 @@ your preamble.
  on input line 2.
 
 Package hyperref Info: Link coloring ON on input line 2.
+(./1-3.out) (./1-3.out)
 \@outlinefile=\write6
 \openout6 = `1-3.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 LaTeX Warning: emath と hyperref との併用は，原則としてできません。以下簡略化し
@@ -1895,37 +1894,18 @@ LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 119.
-
-
-LaTeX Warning: Reference `tha:kubun' on page 2 undefined on input line 119.
-
-[2] [3] (./1-3.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `1-3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `1-3.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  5C58256C374C8955A5DDA76D3D0476A1;100.
+ [2] [3]
+(./1-3.aux)
+Package rerunfilecheck Info: File `1-3.out' has not changed.
+(rerunfilecheck)             Checksum: 5C58256C374C8955A5DDA76D3D0476A1;100.
  ) 
 Here is how much of TeX's memory you used:
- 55975 strings out of 475534
- 1163866 string characters out of 5791080
- 1946922 words of memory out of 5000000
+ 55981 strings out of 475534
+ 1163899 string characters out of 5791080
+ 1949153 words of memory out of 5000000
  76801 multiletter control sequences out of 15000+600000
  517240 words of font info for 97 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  145i,23n,141p,849b,928s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 1-3.dvi (3 pages, 139056 bytes).
+Output written on 1-3.dvi (3 pages, 139604 bytes).

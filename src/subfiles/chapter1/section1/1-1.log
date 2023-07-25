@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  24 JUL 2023 13:18
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  25 JUL 2023 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,7 +598,7 @@ rs
 \@LabelPart=\box90
 \ResultBox=\box91
 )
-(../../../doc//../str/eclbkbox.sty
+(../../../doc//../sty/eclbkbox.sty
 \bk@bxb=\box92
 \bk@bxa=\box93
 \bk@lcnt=\count304
@@ -611,9 +611,9 @@ LaTeX Info: Redefining \yen on input line 120.
 \EXAMPLEWIDTH=\dimen310
 \shaderule=\dimen311
 )
-(../../../doc//../str/ascolorbox.sty
+(../../../doc//../sty/ascolorbox.sty
 
-LaTeX Warning: You have requested package `../../../doc//../str/ascolorbox',
+LaTeX Warning: You have requested package `../../../doc//../sty/ascolorbox',
                but the package provides `ascolorbox'.
 
 Package: ascolorbox 2019/4/30, Version 1.0.3
@@ -1879,4 +1879,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  145i,7n,141p,849b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 1-1.dvi (1 page, 3152 bytes).
+Output written on 1-1.dvi (1 page, 3268 bytes).
