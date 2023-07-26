@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  26 JUL 2023 17:40
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  26 JUL 2023 06:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**1-4
-(./1-4.tex
+**2-3
+(./2-3.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-06-01> patch level 5)
 L3 programming layer <2022-08-30>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -1772,8 +1772,8 @@ Package: emathCap 2011/11/10 v0.02
 \beforechapskip=\skip103
 \midchapskip=\skip104
 \c@tcb@cnt@mytheo=\count436
-)) (./1-4.aux)
-\openout1 = `1-4.aux'.
+)) (./2-3.aux)
+\openout1 = `2-3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ceo/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
@@ -1838,9 +1838,9 @@ your preamble.
  on input line 2.
 
 Package hyperref Info: Link coloring ON on input line 2.
-(./1-4.out) (./1-4.out)
+(./2-3.out) (./2-3.out)
 \@outlinefile=\write6
-\openout6 = `1-4.out'.
+\openout6 = `2-3.out'.
 
 
 
@@ -1860,37 +1860,29 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Trying to load font information for U+kigoa on input line 7
+.
+(/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigoa.fd
+File: ukigoa.fd 2005/5/18 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+kigob on input line 2
+0.
 
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 6.
+(/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigob.fd
+File: ukigob.fd 2005/5/18 v1.0
+) [1
 
-
-LaTeX Warning: Reference `解説1' on page 1 undefined on input line 6.
-
-[1
-
-] (./1-4.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `1-4.out' has not changed.
-(rerunfilecheck)             Checksum: 098716508C8B0157BD1F964FEAA8AEFE;100.
+] (./2-3.aux)
+Package rerunfilecheck Info: File `2-3.out' has not changed.
+(rerunfilecheck)             Checksum: 82B6C387C29C5161D55F6FB0CEDE74B7;100.
  ) 
 Here is how much of TeX's memory you used:
- 53123 strings out of 475534
- 1108209 string characters out of 5791080
- 3671324 words of memory out of 5000000
- 73954 multiletter control sequences out of 15000+600000
- 513315 words of font info for 85 fonts, out of 8000000 for 9000
+ 52685 strings out of 475534
+ 1095292 string characters out of 5791080
+ 1832522 words of memory out of 5000000
+ 73507 multiletter control sequences out of 15000+600000
+ 516641 words of font info for 95 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 145i,17n,141p,849b,2364s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 145i,14n,141p,849b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 1-4.dvi (1 page, 330728 bytes).
+Output written on 2-3.dvi (1 page, 7752 bytes).
