@@ -54,6 +54,8 @@
                             \path[draw] (0.15*\t, 0) -- (0.15*\t+0.4, 1);
                         }
                     \end{tikzpicture}
+                    \caption{お山1つ分の面積}
+                    \label{お山1つ分の面積}
                 }
             \end{figure}
 
@@ -64,7 +66,7 @@
             \end{align*}
             \item [\kakkoni] \textcolor{myBlue2}{$B_n$は$A_k$と形は似ていますが，少々異なる部分があります．まずは，$B_n$を$A_k$を用いて
             表すことから始めましょう．慣れている人は素早く変形できるかもしれませんが，ここではそのような{\bf プロ}の頭の中を覗いてみましょう．
-            文字で一般化されている場合は，具体的な数字を当てはめることで考えやすくなります．ここで，$B_n$の$\bunsuu{1}{\sqrt{n}}$は邪魔なので，それを除いた
+            文字（$B_n$の$n$のこと）で一般化されている場合は，具体的な数字を当てはめることで考えやすくなります．ここで，$B_n$の$\bunsuu{1}{\sqrt{n}}$は邪魔なので，それを除いた
             部分である$\dint{\sqrt{n\pi}}{\sqrt{2n\pi}}\emabs{\sin{(x^2)}}dx$を${B_n}^\prime$と置きます．
             \begin{enumerate}
                 \item [\tokeiichi] $n=1$のとき
@@ -149,6 +151,8 @@
                         \draw (5,0) node [below] {\raisebox{-1.2em}{$\sdots\sdots$}};
                         \draw (5,0.1) node {$\sdots\sdots$};
                     \end{tikzpicture}
+                    \caption{区分求積法}
+                    \label{区分求積法1}
                 }
             \end{figure}
 
@@ -186,6 +190,8 @@
                         \draw (4,0.1) node {$\sdots\sdots$};
                         \draw (4,2) node [below,align=center] {$(\text{網目部の面積の和})=\bunsuu{1}{n}\retuwa{k=n+1}{2n}\bunsuu{1}{\sqrt{(k/n)\pi}}$}; 
                     \end{tikzpicture}
+                    \caption{区分求積法}
+                    \label{区分求積法2}
                 }
             \end{figure}
 

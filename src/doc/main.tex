@@ -89,6 +89,13 @@
     colframe=myBlue,colback=myBlue!2!white,
     rightrule=0pt,leftrule=0pt,bottomrule=2pt,
     colbacktitle=myBlue,theorem style=standard,breakable,arc=0pt}{tha}
+
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{section}.\arabic{figure}}
+\renewcommand{\thetable}{arabic{chapter}.\arabic{section}.\arabic{table}}
+\makeatletter
+\@addtoreset{figure}{section}
+\@addtoreset{table}{section}
+
 %%%%%%%%%%%%%%% document %%%%%%%%%%%%%%%
 \begin{document}
 

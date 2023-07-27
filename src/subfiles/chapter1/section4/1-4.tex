@@ -3,9 +3,9 @@
     \setcounter{chapter}{1}
     \setcounter{section}{3}
     \section{研究}\label{研究1}
-        \ref{解説1}節では，式変形により解き進めましたが一体何を計算していたのでしょうか？まず，$A_k$の定積分が
-        どの図形の面積を表すかを考えてみましょう．以下の図に$y=\emabs{\sin{(x^2)}}$のグラフを描画します．また，$A_2=\dint{\sqrt{2\pi}}{\sqrt{3\pi}}\emabs{\sin{(x^2)}}\,dx$
-        に対応する部分を\textcolor{myBlue}{水色}で塗りつぶします．
+        \subsection{$A_k$は何を表しているか？}\label{Akは何を表しているか}
+        \ref{解説1}節では，式変形により解き進めましたが，一体何を計算していたのでしょうか？まず，$A_k$の定積分が
+        どの図形の面積を表すかを考えてみましょう．以下の図\ref{1.4.1_1}に$y=\emabs{\sin{(x^2)}}$のグラフを描画します．
         \begin{figure}[htbp]
             \centering
             \begin{tikzpicture}
@@ -33,7 +33,65 @@
                 \addplot [domain={sqrt(2*pi)}:{sqrt(3*pi)}, myBlue, thick, fill=myBlue!50,samples=5000] {abs(sin(deg(x^2)))} \closedcycle;
                 \end{axis}
             \end{tikzpicture}
+            \caption{$y=\emabs{\sin{(x^2)}}$の概形}
+            \label{1.4.1_1}
         \end{figure}
-        $y=\emabs{\sin{(x^2)}}$は$x=\sqrt{m\pi}~(m\text{は0以上の整数})$のときに$y=0$となります．したがって，お山が連なった形状となります．そのお山を左から順に$0\text{番目},~1\text{番目},~\udots$としていくと，
-        $k$番目のお山の面積が$A_k$となるわけです．
+        $y=\emabs{\sin{(x^2)}}$は$x=\sqrt{m\pi}~(m\text{は0以上の整数})$のときに$y=0$となり，お山が連なった形状となります．そのお山を左から順に$0\text{番目},~1\text{番目},~\udots$としていくと，
+        $k$番目のお山の面積が$A_k$となるわけです．例として，\textcolor{myBlue}{水色}で塗りつぶした部分が$A_2=\dint{\sqrt{2\pi}}{\sqrt{3\pi}}\emabs{\sin{(x^2)}}\,dx$
+        に対応しています．
+        \subsection{$A_k$を図形的に評価する}\label{Akを図形的に評価する}
+        \ref{Akは何を表しているか}項で$A_k$が何を表しているかが分かりました．では，
+        以下の図のように下から評価する\footnote{「下から評価する」とは，$x\leq A_k$もしくは$x<A_k$を満たす$x$を求めることです．同様に「上から評価する」という言い回しもあります．}ことはできないでしょうか？$k=2$の場合を考えてみましょう．
+
+        \begin{figure}[htbp]
+            \centering
+            \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=middle,
+                    xlabel={$x$},
+                    ylabel={$y$},
+                    ylabel style={at={(ticklabel* cs:1.00)}, anchor=west},
+                    xmax=5.6,
+                    xmin=-0.3,
+                    ymax=1.2,
+                    ymin=-0.3,
+                    xtick={0,{sqrt(pi)},{sqrt(2*pi)},{sqrt(3*pi)},{sqrt(4*pi)},{sqrt(5*pi)},{sqrt(6*pi)},{sqrt(7*pi)}},
+                    ytick={0,1},
+                    xticklabels={0,$\sqrt{\pi}$,$\sqrt{2\pi}$,$\sqrt{3\pi}$,$\sqrt{4\pi}$,$\sqrt{5\pi}$,$\sqrt{6\pi}$,$\sqrt{7\pi}$},
+                    yticklabels={0,1},
+                    enlargelimits=true,
+                    xscale=1.8
+                    %grid style=dashed,
+                    %grid=both
+                ]
+                \node [draw=white,anchor=north east] at (axis cs:-0.02,-0.02) {O};
+                \addplot [domain=0:4.8,samples=5000] {abs(sin(deg(x^2)))} node[above right] {$y=|\sin{(x^2)}|$};
+                \addplot [domain={sqrt(2*pi)}:{sqrt(3*pi)}, myBlue, thick, fill=myBlue!50,samples=5000] {abs(sin(deg(x^2)))} \closedcycle;
+                \addplot [black, semithick] coordinates {({sqrt(2*pi)},0) ({sqrt(5)*sqrt(pi/2)},1)};
+                \addplot [black, semithick] coordinates {({sqrt(2*pi)},0) ({sqrt(3*pi)},0)};
+                \addplot [black, semithick] coordinates {({sqrt(3*pi)},0) ({sqrt(5)*sqrt(pi/2)},1)};
+                \end{axis}
+            \end{tikzpicture}
+            \caption{$A_2$の面積を三角形の面積で下から評価する}
+            \label{A2の面積を三角形の面積で下から評価する}
+        \end{figure}
+
+        \noindent
+        もし
+        \begin{align*}
+            \text{（三角形の面積）}\leq A_2\naraba \bunsuu{1}{\sqrt{(2+1)\pi}}\leq A_2\quad\quad\text{すなわち}\quad\quad\bunsuu{\sqrt{3\pi}-\sqrt{2\pi}}{2}\leq A_2\naraba \bunsuu{1}{\sqrt{3\pi}}\leq A_2
+        \end{align*}
+        が真であれば，下から評価できるということになります．要は，議論の流れとして
+        \begin{enumerate}
+            \item [\tokeiichi] $\bunsuu{\sqrt{3\pi}-\sqrt{2\pi}}{2}\leq A_2$である．
+            \item [\tokeini] また，$\bunsuu{1}{\sqrt{3\pi}}\leq\bunsuu{\sqrt{3\pi}-\sqrt{2\pi}}{2}$である．
+            \item [\tokeisan] したがって，$\bunsuu{1}{\sqrt{3\pi}}\leq A_2$である．
+        \end{enumerate}
+        と言いたいわけです．\tokeiichi は図形より正しいとしてよいでしょう．しかしながら，\tokeini に関して
+        \begin{align*}
+            \bunsuu{\sqrt{3\pi}-\sqrt{2\pi}}{2}-\bunsuu{1}{\sqrt{3\pi}}=\bunsuu{3\pi-\sqrt{6}\pi-2}{2\sqrt{3\pi}}=\bunsuu{(3-\sqrt{6})\pi-2}{2\sqrt{3\pi}}<\bunsuu{(3-2.4)\pi-2}{2\sqrt{3\pi}}<\bunsuu{0.6\sdot 3.2-2}{2\sqrt{3\pi}}<0
+        \end{align*}
+        であるから，\tokeini は成り立ちません．この例では$k=2$のときを計算しましたが，すべての正の整数$k$について
+        同様の結果になります．よって，図形的に下から評価することは難しいでしょう．仮に，何らかの方法で下から評価することができても，
+        上から評価するのはさらに難しいでしょう．
 \end{document}
