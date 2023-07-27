@@ -3,5 +3,54 @@
     \setcounter{chapter}{5}
     \setcounter{section}{2}
     \section{解説}\label{解説5}
-        
+        \begin{enumerate}
+        \item [(1)]
+            $g(x)$を$f(x)$で割った商を$P(x)$とすると，
+            \begin{align*}
+                g(x)=f(x)\cdot P(x)+r(x)
+            \end{align*}
+            と表せるから，この両辺を$7$乗すると，
+            \begin{align*}
+                g(x)^7&=\retuwa{r=0}{6}\left\{\kumiawase{7}{r}\cdot\left(f(x)\cdot P(x)\right)^{7-r}\cdot r(x)^r\right\} +r(x)^7 \\
+                &=f(x)\cdot\retuwa{r=0}{6}\left(\kumiawase{7}{r}\cdot f(x)^{6-r}\cdot P(x)^{7-r}\cdot r(x)^r\right) +r(x)^7
+            \end{align*}
+            したがって，$g(x)^7$を$f(x)$で割った余りは，$r(x)^7$を$f(x)$で割った余りに等しい。\owari
+            \item [(2)]
+            条件より，$f(x)$を法として，$h(x)^7\equiv h_1(x)$，$h_1(x)^7\equiv h_2(x)$がそれぞれ成り立つから，
+            \begin{align*}
+                h(x)^{49}=(h(x)^7)^7\equiv h_1(x)^7\equiv h_2(x)\pmod{f(x)}
+            \end{align*}
+            これより，$h(x)^{49}\equiv h(x)\pmod{f(x)}$となるような$a,\,b$の組を求める。
+            ここで，$p(x)$を次のようにおく。 
+            \begin{align*}
+                p(x)=h(x)^{49}-h(x)\quad\therefore\,\,p^\prime(x)=49h(x)^{48}\cdot h^\prime(x)-h^\prime(x)
+            \end{align*}
+            そして，
+            \begin{align*}
+                h(x)^{49}\equiv h(x)\pmod{f(x)}\iff p(x)\equiv0\pmod{f(x)}\iff p(1)=p^\prime(1)=p(2)=0
+            \end{align*}
+            であるから，$p(1)=p^\prime(1)=p(2)=0$を満たす$a,\,b$の組を求める。$p(1)=p^\prime(1)=p(2)=0$に関して，以下の$\maruichi$，$\maruni$，$\marusan$式を得る。
+            \begin{align*}
+                &
+                \left\{
+                    \begin{array}{lc}
+                        p(1)=(1+a+b)^{49}-(1+a+b)=(1+a+b)\left\{(1+a+b)^{48}-1\right\}=0 & \quad\cdots\,\,\maruichi \\[1mm]
+                        p^\prime(1)=49(1+a+b)^{48}(2+a)-(2+a)=(2+a)\left\{49(1+a+b)^{48}-1\right\}=0 & \quad\cdots\,\,\maruni \\[1mm]
+                        p(2)=(4+2a+b)^{49}-(4+2a+b)=(4+2a+b)\left\{(4+2a+b)^{48}-1\right\}=0 & \quad\cdots\,\,\marusan
+                    \end{array}
+                \right.
+            \end{align*}
+            $\maruichi$式について，$1+a+b=x$とおくと，
+            \begin{align*}
+                \maruichi&\iff x^{49}-x=0 \\
+                &\iff x(x^{24}+1)(x^{12}+1)(x^6+1)(x^3+1)(x^3-1)=0 \\
+                &\iff x=0\;\lor\; x=1\;\lor\; x=-1\quad(\because\,\,x\in\mathbb{R})
+            \end{align*}
+            $x=1+a+b$が$0$，$1$，$-1$のいずれの場合においても，$\maruni$に代入すると$a=-2$となるから，
+            \begin{align*}
+                &\maruichi\wedge\maruni\iff(a,\,b)=(-2,\,1)\;\lor\;(a,\,b)=(-2,\,2)\;\lor\;(a,\,b)=(-2,\,0) \\
+                &\therefore\,\,\maruichi\wedge\maruni\wedge\marusan\iff(a,\,b)=(-2,\,1)\;\lor\;(a,\,b)=(-2,\,0)
+            \end{align*}
+            よって，求めるべき$a,\,b$の組は，$\boldsymbol{(a,\,b)=(-2,\,1),\,(-2,\,0)}$\kotae
+        \end{enumerate}
 \end{document}

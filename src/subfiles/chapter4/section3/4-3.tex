@@ -3,5 +3,56 @@
     \setcounter{chapter}{4}
     \setcounter{section}{2}
     \section{解説}\label{解説4}
-        
+    \begin{enumerate}
+        \item [\kakkoichi] 
+        点$\mathrm P$の座標を$(x,\,y,\,z)$とすると，
+        \begin{align*}
+            \begin{cases}
+                \bekutoru{OP}\cdot\bekutoru{OA}=2x=0\\
+                \bekutoru{OP}\cdot\bekutoru{OB}=x+y+z=0\\
+                \bekutoru{OP}\cdot\bekutoru{OC}=x+2y+3z=1
+            \end{cases}
+        \end{align*}
+        より$\boldsymbol{(x,\,y,\,z)=(0,\,-1,\,1)}$\kotae
+        \item [\kakkoni] 
+        $\bekutoru{OH}$は実数$s$を用いて$\bekutoru{OH}=s\bekutoru{OA}+(1-s)\bekutoru{OB}$と書ける。$\bekutoru{PH}\perp\bekutoru{AB}$より
+        \begin{align*}
+            \bekutoru{PH}\cdot\bekutoru{AB}&=(\bekutoru{OH}-\bekutoru{OP})\cdot(\bekutoru{OB}-\bekutoru{OA})=\bekutoru{OH}\cdot(\bekutoru{OB}-\bekutoru{OA})\\
+            &=-s|\bekutoru{OA}|^2+(2s-1)\bekutoru{OA}\cdot\bekutoru{OB}+(1-s)|\bekutoru{OB}|^2\\
+            &=-4s+2(2s-1)+3(1-s)=1-3s=0
+        \end{align*}
+        よって$s=\bunsuu13$なので，$\boldsymbol{\bekutoru{OH}=\bunsuu{\bekutoru{OA}+2\bekutoru{OB}}3}$\kotae
+        \item [\kakkosan] 
+        点$\mathrm Q$から平面$\mathrm{OHB}$に垂線を下ろし，その垂線と平面$\mathrm{OHB}$の交点を$\mathrm M$とする。$\bekutoru{OA},\,\bekutoru{OB}$は1次独立であるから，$\bekutoru{OM}$は実数$t,\,u$を用いて$\bekutoru{OM}=t\bekutoru{OA}+u\bekutoru{OB}=(2t+u,\,u,\,u)$と書ける。また，$\bekutoru{QM}$は平面$\mathrm{OAB}$上に垂直なので$\bekutoru{OP}\Heikou\bekutoru{QM}$であり，実数$k$を用いて$\bekutoru{QM}=k\bekutoru{OP}$と書けるから，
+        \begin{align*}
+            \bekutoru{OM}=\bekutoru{OQ}+\bekutoru{QM}=\bunsuu34\bekutoru{OA}+(1+k)\bekutoru{OP}=\left(\bunsuu32,\,-(1+k),\,1+k\right)
+        \end{align*}
+        よって
+        \begin{align*}
+            \begin{cases}
+                2t+u=\bunsuu32\\
+                u=-(1+k)\\
+                u=1+k
+            \end{cases}
+        \end{align*}
+        なので，$t=\bunsuu34,u=0$だから$\bekutoru{OM}=\bunsuu34\bekutoru{OA}$である。\\
+        点$\mathrm M$から直線$\mathrm{OH}$に垂線を下ろし，その垂線と直線$\mathrm{OH}$の交点を$\mathrm N$とする。このとき図より，三角形$\mathrm{OHB}$上の点のうち点$\mathrm M$からの距離が最小であるのは点$\mathrm N$，最大であるのは頂点$\mathrm O,\mathrm B,\mathrm H$のいずれかである。さらに，三角形$\mathrm{OHB}$上を点$\mathrm X$が動くとき，$\mathrm{QX}^2=\mathrm{QM}^2+\mathrm{MX}^2$より$\mathrm{QX}$が最小，最大となる点はそれぞれ$\mathrm{MX}$が最大，最小となる点である。この最小値と最大値が$r$の最小値と最大値であり，$\mathrm X$が動くとき$\mathrm{QX}$は連続的に変化するので求める範囲は$\text{(最小値)}\leqq r\leqq\text{(最大値)}$の形で表される。\\
+        点$\mathrm N$は線分$\mathrm{OH}$上にあるので実数$\ell$を用いて$\bekutoru{ON}=\ell\bekutoru{OH}$と書け，$\bekutoru{MN}\perp\bekutoru{OH}$から
+        \begin{align*}
+            \bekutoru{MN}\cdot\bekutoru{OH}&=\left(\ell\bekutoru{OH}-\bunsuu34\bekutoru{OA}\right)\cdot\bekutoru{OH}=\ell|\bekutoru{OH}|^2-\bunsuu34\bekutoru{OA}\cdot\bekutoru{OH}\\
+            &=\ell\left|\left(\bunsuu43,\,\bunsuu23,\,\bunsuu23\right)\right|^2-\bunsuu34(2,\,0,\,0)\cdot\left(\bunsuu43,\,\bunsuu23,\,\bunsuu23\right)=\bunsuu83\ell-2=0
+        \end{align*}
+        即ち$\ell=\bunsuu34$である。よって$r^2$の最小値は
+        \begin{align*}
+            |\bekutoru{QN}|^2&=\left|\left(\bunsuu14\bekutoru{OA}+\bunsuu12\bekutoru{OB}\right)-\left(\bunsuu34\bekutoru{OA}+\bekutoru{OP}\right)\right|^2=\left|-\bunsuu12\bekutoru{OA}+\bunsuu12\bekutoru{OB}+\bekutoru{OP}\right|^2\\
+            &=\bunsuu14|\bekutoru{OA}|^2+\bunsuu14|\bekutoru{OB}|^2+|\bekutoru{OP}|^2-\bunsuu12\bekutoru{OA}\cdot\bekutoru{OB}=\bunsuu{11}4
+        \end{align*}
+        また，
+        \begin{align*}
+            |\bekutoru{OQ}|^2&=\left|\bunsuu34\bekutoru{OA}+\bekutoru{OP}\right|^2=\bunsuu9{16}|\bekutoru{OA}|^2+|\bekutoru{OP}|^2=\bunsuu{17}4\\
+            |\bekutoru{BQ}|^2&=\left|\bunsuu34\bekutoru{OA}-\bekutoru{OB}+\bekutoru{OP}\right|^2=\bunsuu9{16}|\bekutoru{OA}|^2-\bunsuu32\bekutoru{OA}\cdot\bekutoru{OB}+|\bekutoru{OB}|^2+|\bekutoru{OP}|^2=\bunsuu{17}4\\
+            |\bekutoru{HQ}|^2&=\left|\bunsuu5{12}\bekutoru{OA}-\bunsuu23\bekutoru{OB}+\bekutoru{OP}\right|^2=\bunsuu{25}{144}|\bekutoru{OA}|^2-\bunsuu59\bekutoru{OA}\cdot\bekutoru{OB}+\bunsuu49|\bekutoru{OB}|^2+|\bekutoru{OP}|^2=\bunsuu{35}{12}
+        \end{align*}
+        より$r^2$の最大値は$\bunsuu{17}4$である。以上より求める範囲は$\boldsymbol{\bunsuu{\kongou{11}}2\leqq r\leqq\bunsuu{\kongou{17}}2}$\kotae
+    \end{enumerate}
 \end{document}

@@ -1,11 +1,18 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  28 JUL 2023 05:59
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  28 JUL 2023 05:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main
-(./main.tex
+**4-3
+(./4-3.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-06-01> patch level 5)
 L3 programming layer <2022-08-30>
+(/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../../../doc/main'
+(/usr/local/texlive/2022/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+)
+(../../../doc/main.tex
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fleqn.clo
@@ -591,7 +598,7 @@ rs
 \@LabelPart=\box90
 \ResultBox=\box91
 )
-(../sty/eclbkbox.sty
+(../../../doc//../sty/eclbkbox.sty
 \bk@bxb=\box92
 \bk@bxa=\box93
 \bk@lcnt=\count304
@@ -604,9 +611,9 @@ LaTeX Info: Redefining \yen on input line 120.
 \EXAMPLEWIDTH=\dimen310
 \shaderule=\dimen311
 )
-(../sty/ascolorbox.sty
+(../../../doc//../sty/ascolorbox.sty
 
-LaTeX Warning: You have requested package `../sty/ascolorbox',
+LaTeX Warning: You have requested package `../../../doc//../sty/ascolorbox',
                but the package provides `ascolorbox'.
 
 Package: ascolorbox 2019/4/30, Version 1.0.3
@@ -869,10 +876,7 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (/usr/local/texlive/2022/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-))
+)
 (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -1768,32 +1772,32 @@ Package: emathCap 2011/11/10 v0.02
 \beforechapskip=\skip103
 \midchapskip=\skip104
 \c@tcb@cnt@mytheo=\count436
- (./main.aux)
-\openout1 = `main.aux'.
+))
+No file 4-3.aux.
+\openout1 = `4-3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ceo/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/ceo/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/ceo/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-
+LaTeX Font Info:    Checking defaults for OML/ceo/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/ceo/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/ceo/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvipdfm
@@ -1831,120 +1835,20 @@ LaTeX Font Info:    ... okay on input line 100.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 100.
+ on input line 2.
 
-Package hyperref Info: Link coloring ON on input line 100.
-(./main.out) (./main.out)
+Package hyperref Info: Link coloring ON on input line 2.
 \@outlinefile=\write6
-\openout6 = `main.out'.
+\openout6 = `4-3.out'.
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 LaTeX Warning: emath と hyperref との併用は，原則としてできません。以下簡略化し
-た対応となります。 on input line 100.
+た対応となります。 on input line 2.
 
-LaTeX Info: Redefining \colorbox on input line 100.
-(../subfiles/titlepage/title.tex
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <25> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <25> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <25> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <25> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 18.
-
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 22.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/sc' undefined
-(Font)              No change on input line 26.
-
-LaTeX Font Warning: Font shape `OT1/ceo/m/sc' undefined
-(Font)              using `OT1/ceo/m/n' instead on input line 26.
-
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 29.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 29.
-
-) [1
-
-]
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <24.88> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 104.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 104.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <24.88> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 104.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 104.
-
-(./main.toc
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 1.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 4.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 11.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 16.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 21.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 26.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 31.
-
-)
-\tf@toc=\write7
-\openout7 = `main.toc'.
-
- [2
-
-]
-Chapter 0.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 107.
-
-(../subfiles/chapter0/section1/0-1.tex
+LaTeX Info: Redefining \colorbox on input line 2.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
@@ -1954,305 +1858,36 @@ LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 5.
 
-
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) (../subfiles/chapter0/section2/0-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 6.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 7.
-
-) [3
-
-]
-Chapter 1.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 111.
-
-(../subfiles/chapter1/section1/1-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-LaTeX Font Info:    Trying to load font information for U+kigoa on input line 6
+LaTeX Font Info:    Trying to load font information for U+kigoa on input line 7
 .
 (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigoa.fd
 File: ukigoa.fd 2005/5/18 v1.0
-))
-(../subfiles/chapter1/section2/1-2.tex
+) [1
 
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter1/section3/1-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-[4
-
-]
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 63.
-
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 94.
-
-LaTeX Font Info:    Trying to load font information for U+kigob on input line 9
-4.
-(/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigob.fd
-File: ukigob.fd 2005/5/18 v1.0
-) [5]
-LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 107.
-LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 107.
- [6])
-(../subfiles/chapter1/section4/1-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 6.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 6.
-
-[7]
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
-
-[8]) [9]
-Chapter 2.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 117.
-
-(../subfiles/chapter2/section1/2-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter2/section2/2-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter2/section3/2-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-[10
-
-]) (../subfiles/chapter2/section4/2-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) [11]
-Chapter 3.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 123.
-
-(../subfiles/chapter3/section1/3-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter3/section2/3-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter3/section3/3-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-
-LaTeX Warning: mawarikomi環境を段落途中に配置しました。(mawarikomi environment 
-must be used at the top of a paragraph.) on input line 17.
-
-mawarikomi:図幅=73.24846pt
-[12
-
-]) (../subfiles/chapter3/section4/3-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) [13]
-Chapter 4.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 129.
-
-(../subfiles/chapter4/section1/4-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter4/section2/4-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter4/section3/4-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-[14
-
-]) (../subfiles/chapter4/section4/4-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) [15]
-Chapter 5.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 135.
-
-(../subfiles/chapter5/section1/5-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter5/section2/5-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter5/section3/5-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-[16
-
-]) (../subfiles/chapter5/section4/5-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) [17]
-Chapter 6.
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 141.
-
-(../subfiles/chapter6/section1/6-1.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter6/section2/6-2.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) (../subfiles/chapter6/section3/6-3.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-
-Overfull \hbox (4.54pt too wide) detected at line 7
-$[]$
- []
-
-
-LaTeX Warning: mawarikomi環境を段落途中に配置しました。(mawarikomi environment 
-must be used at the top of a paragraph.) on input line 57.
-
-mawarikomi:図幅=203.98pt
-[18
-
-]
-Overfull \hbox (4.54pt too wide) detected at line 60
-$[]$
- []
-
-
-Overfull \hbox (4.54pt too wide) detected at line 61
-$[]$
- []
-
-
-Overfull \hbox (4.54pt too wide) detected at line 69
-$[]$
- []
-
-[19]) (../subfiles/chapter6/section4/6-4.tex
-
-LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 5.
-
-) [20] (./main.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
+] [2]
+(./4-3.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 08BC72699CC77C09C24BF8CD6C3324C3;2017.
+
+Package rerunfilecheck Warning: File `4-3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `4-3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  67AEBCDB4DA9940E83721F04C46371BD;100.
  ) 
 Here is how much of TeX's memory you used:
- 61662 strings out of 475534
- 1287402 string characters out of 5791080
- 4041058 words of memory out of 5000000
- 82344 multiletter control sequences out of 15000+600000
- 531535 words of font info for 154 fonts, out of 8000000 for 9000
+ 52667 strings out of 475534
+ 1095028 string characters out of 5791080
+ 1925220 words of memory out of 5000000
+ 73499 multiletter control sequences out of 15000+600000
+ 516341 words of font info for 94 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 125i,25n,124p,810b,2499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 145i,25n,141p,849b,742s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (20 pages, 1301764 bytes).
+Output written on 4-3.dvi (2 pages, 14524 bytes).
