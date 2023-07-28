@@ -94,4 +94,34 @@
         であるから，\tokeini は成り立ちません．この例では$k=2$のときを計算しましたが，すべての正の整数$k$について
         同様の結果になります．よって，図形的に下から評価することは難しいでしょう．仮に，何らかの方法で下から評価することができても，
         上から評価するのはさらに難しいでしょう．
+        \subsection{もう一度置換！}\label{もう一度置換}
+        \ref{解説1}節における\kakkoichi の解説の途中で以下の不等式が得られました．
+        \begin{align*}
+            \dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{(k+1)\pi}}\leq A_k \leq \dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\sdot\bunsuu{dt}{2\sqrt{k\pi}}~\sdots\sdots~\maruichi
+        \end{align*}
+        そして，$\dint{k\pi}{(k+1)\pi}\emabs{\sin{t}}\,dt=2~\sdots\sdots~\asta$であることを用いて与不等式を証明しました．しかし，この$\asta$は思い付きましたでしょうか？
+        思いつかなかった方は続けてお読みください．複雑な積分では，積分区間を簡単にすることが大事な方針の1つとなります．不等式$\maruichi$の両側とも積分区間は$k\pi$から$(k+1)\pi$となっております．
+        これを$0$から$\pi$となるように置換してみましょう．
+        \begin{align*}
+            \begin{tabular}{|c|c|} \hline
+                $t$ & $k\pi\to(k+1)\pi\bsityuu$ \\ \hline
+                $s$ & $0\to\pi\bsityuu$ \\ \hline
+            \end{tabular}
+        \end{align*}
+        となって欲しいので...~$s=t-k\pi$と置換すればよさそうですね．したがって，$ds=dt$より，不等式$\maruichi$は
+        \begin{align*}
+            \dint{0}{\pi}\emabs{\sin{(s+k\pi)}}\sdot\bunsuu{ds}{2\sqrt{(k+1)\pi}}\leq A_k \leq \dint{0}{\pi}\emabs{\sin{(s+k\pi)}}\sdot\bunsuu{ds}{2\sqrt{k\pi}}
+        \end{align*}
+        ここで
+        \begin{align*}
+            &\emabs{\sin{(s+k\pi)}}=\emabs{\pm\sin{s}}=\emabs{\pm1}\sdot\emabs{\sin{s}}=\emabs{\sin{s}}=\sin{s} \\
+            &\chub ~~ k\text{が偶数のとき}\emabs{\sin{(s+k\pi)}}=\sin{s},~k\text{が奇数のとき}\emabs{\sin{(s+k\pi)}}=-\sin{s} \\
+            &\chub ~~ \text{積分区間より}0\leq s\leq \pi\text{で},~\sin{s}\geq0\text{なので}\emabs{\sin{s}}=\sin{s}
+        \end{align*}
+        であるから
+        \begin{align*}
+            &\bunsuu{1}{2\sqrt{(k+1)\pi}}\dint{0}{\pi}\sin{s}\,ds\leq A_k \leq \bunsuu{1}{2\sqrt{k\pi}}\dint{0}{\pi}\sin{s}\,ds \\
+            &\Y \bunsuu{1}{\sqrt{(k+1)\pi}}\leq A_k\leq \bunsuu{1}{\sqrt{k\pi}}~~\left(\nazenara~\dint{0}{\pi}\sin{s}\,ds=\teisekibun{-\cos{s}}{0}{\pi}=-\cos{\pi}-(-\cos{0})=2\right)
+        \end{align*}
+        が得られます．このように積分区間が簡単になるように置換をしていきましょう．
 \end{document}

@@ -2,12 +2,13 @@
 \contentsline {section}{\numberline {0.1}本書の概要}{3}{section.0.1}%
 \contentsline {section}{\numberline {0.2}本書の注意事項}{3}{section.0.2}%
 \contentsline {chapter}{\numberline {1}第1問}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}概要}{4}{section.1.1}%
-\contentsline {section}{\numberline {1.2}問題}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.1}概要：差がつく問題}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}問題：積分の不等式評価と極限}{4}{section.1.2}%
 \contentsline {section}{\numberline {1.3}解説}{4}{section.1.3}%
 \contentsline {section}{\numberline {1.4}研究}{7}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}$A_k$は何を表しているか？}{7}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}$A_k$を図形的に評価する}{8}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}もう一度置換！}{9}{subsection.1.4.3}%
 \contentsline {chapter}{\numberline {2}第2問}{10}{chapter.2}%
 \contentsline {section}{\numberline {2.1}概要}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}問題}{10}{section.2.2}%
