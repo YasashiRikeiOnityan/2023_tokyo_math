@@ -70,6 +70,9 @@
                 \addplot [black, semithick] coordinates {({sqrt(2*pi)},0) ({sqrt(5)*sqrt(pi/2)},1)};
                 \addplot [black, semithick] coordinates {({sqrt(2*pi)},0) ({sqrt(3*pi)},0)};
                 \addplot [black, semithick] coordinates {({sqrt(3*pi)},0) ({sqrt(5)*sqrt(pi/2)},1)};
+                \addplot [fill=black] coordinates {({sqrt(2*pi)},0)} circle(7.5/9 pt and 1.5 pt);
+                \addplot [fill=black] coordinates {({sqrt(3*pi)},0)} circle(7.5/9 pt and 1.5 pt);
+                \addplot [fill=black] coordinates {({sqrt(5)*sqrt(pi/2)},1)} circle(7.5/9 pt and 1.5 pt);
                 \end{axis}
             \end{tikzpicture}
             \caption{$A_2$の面積を三角形の面積で下から評価する}
@@ -115,8 +118,8 @@
         ここで
         \begin{align*}
             &\emabs{\sin{(s+k\pi)}}=\emabs{\pm\sin{s}}=\emabs{\pm1}\sdot\emabs{\sin{s}}=\emabs{\sin{s}}=\sin{s} \\
-            &\chub ~~ k\text{が偶数のとき}\emabs{\sin{(s+k\pi)}}=\sin{s},~k\text{が奇数のとき}\emabs{\sin{(s+k\pi)}}=-\sin{s} \\
-            &\chub ~~ \text{積分区間より}0\leq s\leq \pi\text{で},~\sin{s}\geq0\text{なので}\emabs{\sin{s}}=\sin{s}
+            &\chub ~~ k\text{が偶数のとき}\emabs{\sin{(s+k\pi)}}=\sin{s},~k\text{が奇数のとき}\emabs{\sin{(s+k\pi)}}=-\sin{s}. \\
+            &\chub ~~ \text{積分区間より}0\leq s\leq \pi\text{で},~\sin{s}\geq0\text{なので}\emabs{\sin{s}}=\sin{s}.
         \end{align*}
         であるから
         \begin{align*}

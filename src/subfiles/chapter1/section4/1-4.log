@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  28 JUL 2023 18:19
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  29 JUL 2023 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1916,7 +1916,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 42.
 
 LaTeX Font Info:    Trying to load font information for U+kigob on input line 8
-6.
+9.
 (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigob.fd
 File: ukigob.fd 2005/5/18 v1.0
 ) [1
@@ -1924,17 +1924,17 @@ File: ukigob.fd 2005/5/18 v1.0
 ]
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 97.
+(Font)              using `OT1/ceo/bx/n' instead on input line 100.
 
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 98.
+(Font)              using `OT1/ceo/bx/n' instead on input line 101.
 
 
-LaTeX Warning: Reference `解説1' on page 2 undefined on input line 98.
+LaTeX Warning: Reference `解説1' on page 2 undefined on input line 101.
 
-LaTeX Font Info:    Trying to load font information for U+kigoa on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for U+kigoa on input line 1
+01.
 (/usr/local/texlive/texmf-local/tex/latex/local/ceo/ukigoa.fd
 File: ukigoa.fd 2005/5/18 v1.0
 ) [2] (./1-4.aux)
@@ -1945,12 +1945,12 @@ Package rerunfilecheck Info: File `1-4.out' has not changed.
 (rerunfilecheck)             Checksum: 6400166C6F7D613EB646B3945B81648B;356.
  ) 
 Here is how much of TeX's memory you used:
- 53233 strings out of 475534
- 1110123 string characters out of 5791080
- 4076473 words of memory out of 5000000
- 74050 multiletter control sequences out of 15000+600000
+ 53240 strings out of 475534
+ 1110272 string characters out of 5791080
+ 4083249 words of memory out of 5000000
+ 74057 multiletter control sequences out of 15000+600000
  522439 words of font info for 122 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  145i,20n,141p,849b,2362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 1-4.dvi (2 pages, 668536 bytes).
+Output written on 1-4.dvi (2 pages, 669856 bytes).
