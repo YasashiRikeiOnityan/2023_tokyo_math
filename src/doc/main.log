@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  6 AUG 2023 22:49
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.euc) (TeX Live 2022) (preloaded format=platex 2022.9.16)  7 AUG 2023 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2101,18 +2101,25 @@ LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 102.
+(Font)              using `OT1/ceo/bx/n' instead on input line 104.
 
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
-(Font)              using `OT1/ceo/bx/n' instead on input line 135.
+(Font)              using `OT1/ceo/bx/n' instead on input line 168.
+
+
+LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
+(Font)              using `OT1/ceo/bx/n' instead on input line 197.
+
+
+LaTeX Warning: Reference `' on page 11 undefined on input line 197.
 
 ) (../subfiles/chapter2/section4/2-4.tex
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) [11]
+) [11] [12]
 Chapter 3.
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
@@ -2138,14 +2145,14 @@ LaTeX Warning: mawarikomi環境を段落途中に配置しました。(mawarikom
 must be used at the top of a paragraph.) on input line 17.
 
 mawarikomi:図幅=73.24846pt
-[12
+[13
 
 ]) (../subfiles/chapter3/section4/3-4.tex
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) [13]
+) [14]
 Chapter 4.
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
@@ -2166,14 +2173,14 @@ LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-[14
+[15
 
 ]) (../subfiles/chapter4/section4/4-4.tex
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) [15]
+) [16]
 Chapter 5.
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
@@ -2194,14 +2201,14 @@ LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-[16
+[17
 
 ]) (../subfiles/chapter5/section4/5-4.tex
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) [17]
+) [18]
 Chapter 6.
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
@@ -2232,7 +2239,7 @@ LaTeX Warning: mawarikomi環境を段落途中に配置しました。(mawarikom
 must be used at the top of a paragraph.) on input line 57.
 
 mawarikomi:図幅=203.98pt
-[18
+[19
 
 ]
 Overfull \hbox (4.54pt too wide) detected at line 60
@@ -2249,25 +2256,31 @@ Overfull \hbox (4.54pt too wide) detected at line 69
 $[]$
  []
 
-[19]) (../subfiles/chapter6/section4/6-4.tex
+[20]) (../subfiles/chapter6/section4/6-4.tex
 
 LaTeX Font Warning: Font shape `OT1/ceo/b/n' undefined
 (Font)              using `OT1/ceo/bx/n' instead on input line 5.
 
-) [20] (./main.aux)
+) [21] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B535C9CF98408503AA81247916B4E613;2154.
  ) 
 Here is how much of TeX's memory you used:
- 61680 strings out of 475534
- 1287832 string characters out of 5791080
- 4047910 words of memory out of 5000000
- 82362 multiletter control sequences out of 15000+600000
+ 61684 strings out of 475534
+ 1288051 string characters out of 5791080
+ 4048110 words of memory out of 5000000
+ 82366 multiletter control sequences out of 15000+600000
  531535 words of font info for 154 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  125i,25n,124p,810b,2499s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (20 pages, 1364496 bytes).
+Output written on main.dvi (21 pages, 1410060 bytes).

@@ -9,7 +9,7 @@
             全事象である$12$個の玉の並べ方は$\kumiawase{12}{3}\sdot\kumiawase{9}{4}$通りです。 \\
             \textcolor{myBlue2}{もしくは$\bunsuu{12!}{3!\sdot4!\sdot5!}$通りですね．これらの$12$個の玉の並べ方それぞれが現れる確率は，どの並べ方でも等しくなっています．
             同様に確からしいというやつですね．この記述があるとより丁寧な答案となるでしょう．}\\
-            どの赤玉も隣り合わない並べ方は，Figure~\ref{白玉の並びに黒玉を両端もしくは間に挿入}のように黒玉と白玉合計$8$個をまず並べ，その両端または隙間の$9$箇所に重複を避けて
+            どの赤玉も隣り合わない並べ方は，Figure~\ref{白玉と黒玉の並びに赤玉を両端もしくは間に挿入}のように白玉と黒玉合計$8$個をまず並べ，その両端または隙間の$9$箇所に重複を避けて
             赤玉$4$個を入れることで得られます．
             \begin{figure}[htbp]
                 \centering
@@ -32,8 +32,8 @@
                     \draw (4.35,0) node [right] {$\leftarrow~\kumiawase{8}{3}$通り};
                     \draw (4.35,-1.2) node [right] {$\leftarrow~\kumiawase{9}{4}$通り};
                 \end{tikzpicture}
-                \caption{白玉黒玉の並びに赤玉を両端もしくは間に挿入}
-                \label{白玉黒玉の並びに赤玉を両端もしくは間に挿入}
+                \caption{白玉と黒玉の並びに赤玉を両端もしくは間に挿入}
+                \label{白玉と黒玉の並びに赤玉を両端もしくは間に挿入}
             \end{figure}\\
             よって，求める確率$p$は
             \begin{align*}
@@ -44,7 +44,7 @@
             場合の数を求める問題です．（場合の数を求める問題にしなかったのはなぜでしょう...）いきなり赤玉同士も黒玉同士も隣り合わない場合の数を求めるのは難しそうなので，
             一つずつ考えていきましょう．まず白玉と黒玉を並べます．このとき，黒玉同士が隣り合うように並べても構いません．なぜなら，後からその間に赤玉をいれれば条件を満たすからです．
             ですが，黒玉同士がどのように隣り合っているかで赤玉の入れ方が変わるので，} \\
-            \kakkoichi で黒玉と白玉だけを並べた段階において，隣り合う黒玉の状況によって場合分けをします．
+            隣り合う黒玉の状況によって場合分けをします．
             \begin{enumerate}
                 \item [\tokeiichi]
                     {\bf どの黒玉も隣り合わない場合} 
@@ -70,7 +70,8 @@
                         \label{白玉の並びに黒玉を両端もしくは間に挿入}
                     \end{figure}
 
-                    黒玉と白玉の並べ方は，Figure~\ref{白玉の並びに黒玉を両端もしくは間に挿入}のように白玉$5$個の間と両端の合計$6$箇所に重複がないように黒玉$3$個を入れればよいので$\kumiawase{6}{3}$通りです．
+                    \textcolor{myBlue2}{まず白玉と黒玉を並べてみましょう．} \\
+                    白玉と黒玉の並べ方は，Figure~\ref{白玉の並びに黒玉を両端もしくは間に挿入}のように白玉$5$個の間と両端の合計$6$箇所に重複がないように黒玉$3$個を入れればよいので$\kumiawase{6}{3}$通りです．
 
                     \begin{figure}[htbp]
                         \centering
@@ -93,11 +94,12 @@
                             \draw (4.35,0) node [right] {$\leftarrow~\kumiawase{6}{3}$通り};
                             \draw (4.35,-1.2) node [right] {$\leftarrow~\kumiawase{9}{4}$通り};
                         \end{tikzpicture}
-                        \caption{白玉の並びに黒玉を両端もしくは間に挿入（場合分けi）}
-                        \label{白玉の並びに黒玉を両端もしくは間に挿入（場合分けi）}
+                        \caption{白玉と黒玉の並びに赤玉を両端もしくは間に挿入（場合分けi）}
+                        \label{白玉と黒玉の並びに赤玉を両端もしくは間に挿入（場合分けi）}
                     \end{figure}
 
-                    この間のどこに赤玉を入れても黒玉が隣接することはないので，赤玉まで含めた並べ方は$\kumiawase{6}{3}\sdot\kumiawase{9}{4}$通りとなります．
+                    Figure~\ref{白玉と黒玉の並びに赤玉を両端もしくは間に挿入（場合分けi）}のように，白玉と黒玉の並びの間もしくは両端
+                    のどこに赤玉を入れても黒玉が隣接することはないので，赤玉まで含めた並べ方は$\kumiawase{6}{3}\sdot\kumiawase{9}{4}$通りとなります．
                 \item [\tokeini]
                     {\bf $2$個の黒玉が隣り合い，残りの$1$個とは隣り合っていない場合} 
 
@@ -120,7 +122,7 @@
                             \fill [black] (-0.1,-1.2) circle(.3cm);
                             \draw [black] (-0.1,-1.2) circle(.3cm);
 
-                            \draw [dashed] (-1.3,-0.8) -- (-1.3,-1.6) -- (0.3,-1.6) -- (0.3,-0.8) -- cycle;
+                            \draw [dashed] (-1.25,-0.85) -- (-1.25,-1.55) -- (0.25,-1.55) -- (0.25,-0.85) -- cycle;
 
                             \draw (2.85,0) node [right] {$\leftarrow~1$通り};
                             \draw (2.85,-1.2) node [right] {$\leftarrow~\kumiawase{6}{3}$通り};
@@ -129,20 +131,102 @@
                         \label{黒玉2つをセットで白玉の両端もしくは間に挿入}
                     \end{figure}
 
-                    白玉$5$個の間と両端の合計$ 6 $箇所のうち相異なる箇所に，「$ 2 $個の黒玉」と「$ 1 $個の黒玉」を1組ずつ入れることで黒玉と白玉の並べ方が作れる。この並べ方は$ 6 \sdot 5 = 30 $通りである。
-                    「2個の黒玉」の間には赤玉を入れる必要があり，それ以外の$ 8 $箇所には残り$ 3 $個の赤玉をどこに入れても黒玉は隣接しないので，赤玉まで含めた並べ方は$ 30 \sdot \kumiawase{8}{3} = 30 \sdot 56 = 1680 $通りである。
+                    \textcolor{myBlue2}{\tokeiichi と同様に，まず白玉と黒玉を並べてみましょう．} \\
+                    $2$個の黒玉が隣り合い，残りの$1$個とは隣り合っていない場合は，Figure~\ref{黒玉2つをセットで白玉の両端もしくは間に挿入}のように白玉$5$個の間と両端の合計$6$箇所の相異なる箇所に，「$2$個の黒玉」と「$1$個の黒玉」を1組ずつ入れることで白玉と黒玉の並べ方が作れます。
+                    この並べ方は$\zyunretu{6}{2}$通りとなります．
+                    
+                    \begin{figure}[htbp]
+                        \centering
+                        \begin{tikzpicture}
+                            \foreach \t in {-1.5,-0.5,2.5} {
+                                \fill [black] (\t,0) circle(.3cm);
+                                \draw [black] (\t,0) circle(.3cm);
+                            }
+                            \foreach \t in {-3.5,-2.5,0.5,1.5,3.5} {
+                                \fill [white] (\t,0) circle(.3cm);
+                                \draw [black] (\t,0) circle(.3cm);
+                            }
+                            \foreach \t in {-4,-3,...,4} {
+                                \draw (\t,-.6) node {\,\rotatebox{90}{$\to$}};
+                            }
+                            \foreach \t in {-3,-1,2,3} {
+                                \fill [red] (\t,-1.2) circle(.3cm);
+                                \draw [black] (\t,-1.2) circle(.3cm);
+                            }
+                            \draw (-1,-1.5) node [below] {ここは絶対入れる};
+                            \draw (4.35,0) node [right] {$\leftarrow~\zyunretu{6}{2}$通り};
+                            \draw (4.35,-1.2) node [right] {$\leftarrow~\kumiawase{8}{3}$通り};
+                        \end{tikzpicture}
+                        \caption{黒玉の間に1個してその他の白玉と黒玉の並びの両端もしくは間に挿入（場合分けii）}
+                        \label{黒玉の間に1個してその他白玉と黒玉の並びの両端もしくは間に挿入（場合分けii）}
+                    \end{figure}
+                    
+                    そしてFigure~\ref{黒玉の間に1個してその他白玉と黒玉の並びの両端もしくは間に挿入（場合分けii）}のように
+                    「2個の黒玉」の間には赤玉を入れる必要があり，それ以外の$8$箇所には残り$3$個の赤玉をどこに入れても黒玉は隣接しないので，
+                    赤玉まで含めた並べ方は$\zyunretu{6}{2}\sdot\kumiawase{8}{3}$通りとなります．
                 \item [\tokeisan]
                     {\bf $3$個の黒玉が連続して隣り合う場合} \\
-                    白玉$ 5 $個の間と両端の合計$ 6 $箇所のうち$ 1 $箇所に，「3個の黒玉」を入れることで黒玉と白玉の並べ方が作れる。この並べ方は$ 6 $通りである。
-                    「3個の黒玉」の間$ 2 $箇所にはどちらも赤玉を入れる必要があり，それ以外の$ 7 $箇所には残り$ 2 $個の赤玉をどこに入れても黒玉は隣接しないので，赤玉まで含めた並べ方は$ 6 \sdot \kumiawase{7}{2} = 6 \sdot 21 = 126 $通りである。
+                    \textcolor{myBlue2}{ここまで来たら案外簡単では？と思えるようになってきたでしょう！\hspace{1em}\tokeiichi ，\tokeini と同様に，まず白玉と黒玉を並べてみましょう．} 
+
+                    \begin{figure}[htbp]
+                        \centering
+                        \begin{tikzpicture}
+                            \foreach \t in {-2,-1,0,1,2} {
+                                \fill [white] (\t,0) circle(.3cm);
+                                \draw [black] (\t,0) circle(.3cm);
+                            }
+                            \foreach \t in {-2.5,-1.5,...,2.5} {
+                                \draw (\t,-.6) node {\,\rotatebox{90}{$\to$}};
+                            }
+                            \fill [black] (-1.2,-1.2) circle(.3cm);
+                            \draw [black] (-1.2,-1.2) circle(.3cm);
+                            \fill [black] (-0.5,-1.2) circle(.3cm);
+                            \draw [black] (-0.5,-1.2) circle(.3cm);
+                            \fill [black] (0.2,-1.2) circle(.3cm);
+                            \draw [black] (0.2,-1.2) circle(.3cm);
+
+                            \draw [dashed] (-1.55,-0.85) -- (-1.55,-1.55) -- (0.55,-1.55) -- (0.55,-0.85) -- cycle;
+
+                            \draw (2.85,0) node [right] {$\leftarrow~1$通り};
+                            \draw (2.85,-1.2) node [right] {$\leftarrow~6$通り};
+                        \end{tikzpicture}
+                        \caption{黒玉3つをセットで白玉の両端もしくは間に挿入}
+                        \label{黒玉3つをセットで白玉の両端もしくは間に挿入}
+                    \end{figure}
+
+                    3個の黒玉が隣り合うような白玉と黒玉の並べ方は，Figure~\ref{}のように白玉$5$個の間と両端の合計$6$箇所のうち$1$箇所に，「3個の黒玉」を入れることで白玉と黒玉の並べ方が作れます．この並べ方は$6$通りとなります．
+
+                    \begin{figure}[htbp]
+                        \centering
+                        \begin{tikzpicture}
+                            \foreach \t in {-1.5,-0.5,0.5} {
+                                \fill [black] (\t,0) circle(.3cm);
+                                \draw [black] (\t,0) circle(.3cm);
+                            }
+                            \foreach \t in {-3.5,-2.5,1.5,2.5,3.5} {
+                                \fill [white] (\t,0) circle(.3cm);
+                                \draw [black] (\t,0) circle(.3cm);
+                            }
+                            \foreach \t in {-4,-3,...,4} {
+                                \draw (\t,-.6) node {\,\rotatebox{90}{$\to$}};
+                            }
+                            \foreach \t in {-1,0,3,4} {
+                                \fill [red] (\t,-1.2) circle(.3cm);
+                                \draw [black] (\t,-1.2) circle(.3cm);
+                            }
+                            \draw (-0.5,-1.5) node [below] {ここは絶対入れる};
+                            \draw (4.35,0) node [right] {$\leftarrow~6$通り};
+                            \draw (4.35,-1.2) node [right] {$\leftarrow~\kumiawase{7}{2}$通り};
+                        \end{tikzpicture}
+                        \caption{黒玉の間に2個挿入してその他の白玉と黒玉の並びの両端もしくは間に挿入（場合分けiii）}
+                        \label{黒玉の間に2個挿入してその他の白玉と黒玉の並びの両端もしくは間に挿入（場合分けiii）}
+                    \end{figure}
+
+                    「3個の黒玉」の間の$2$箇所にはどちらも赤玉を入れる必要があり，それ以外の$7$箇所には残り$2$個の赤玉をどこに入れても黒玉は隣り合わないので，赤玉まで含めた並べ方は$6\sdot\kumiawase{7}{2}$通りとなります．
             \end{enumerate}
-        よって，$ N_3 = 2520 + 1680 + 126 = 4326 $であるから，
+        \tokeiichi ，\tokeini ,\tokeisan より$ N_3 = 2520 + 1680 + 126 = 4326 $であるから，
         \begin{align*}
             q = \bunsuu{N_3}{N_2} = \bunsuu{4326}{7056} = \boldsymbol{\bunsuu{103}{168}} \kotae
         \end{align*}
-        あああああああああああああああああああああああ
-        あああああああああああああああああああああああ
-        あああああああああああああああああああああああ
-        あああああああああああああああああああああああ
     \end{enumerate}
 \end{document}
