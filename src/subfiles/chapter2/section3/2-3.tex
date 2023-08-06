@@ -7,8 +7,8 @@
         \item [\kakkoichi]
             \textcolor{myBlue2}{確率は$\text{(条件を満たす場合の数)}/\text{(全事象の数)}$で求まりますので，それらを求めていきましょう．} \\
             全事象である$12$個の玉の並べ方は$\kumiawase{12}{3}\sdot\kumiawase{9}{4}$通りです。 \\
-            \textcolor{myBlue2}{もしくは$\bunsuu{12!}{3!\sdot4!\sdot5!}$ですね．また，$12$個の玉の並べ方のうちのそれぞれが現れる確率は，どの並べ方でも等しく$\bunsuu{1}{\kumiawase{12}{3}\sdot\kumiawase{9}{4}}$となります．
-            同様に確からしいというやつですね．この記述はあると丁寧でしょう．}\\
+            \textcolor{myBlue2}{もしくは$\bunsuu{12!}{3!\sdot4!\sdot5!}$通りですね．これらの$12$個の玉の並べ方それぞれが現れる確率は，どの並べ方でも等しくなっています．
+            同様に確からしいというやつですね．この記述があるとより丁寧な答案となるでしょう．}\\
             どの赤玉も隣り合わない並べ方は，黒玉と白玉合計$8$個をまず並べ，その両端または隙間の$9$箇所に重複がないように赤玉$4$個を入れることで得られます．
             \begin{figure}[htbp]
                 \centering
@@ -37,7 +37,7 @@
             p=&\bunsuu{\kumiawase{8}{3}\sdot\kumiawase{9}{4}}{\kumiawase{12}{3}\sdot\kumiawase{9}{4}}=\bunsuu{8\sdot7\sdot6}{12\sdot11\sdot10}=\boldsymbol{\bunsuu{14}{55}}\kotae
             \end{align*}
         \item [\kakkoni]
-            赤玉が隣り合わず，さらに黒玉も隣り合わない並べ方の総数$ N_3 $を考える。(1)で黒玉と白玉だけを並べた段階において，隣り合う黒玉の状況によって場合分けする。
+            \kakkoichi で黒玉と白玉だけを並べた段階において，隣り合う黒玉の状況によって場合分けする。
             \begin{enumerate}
                 \item [\tokeiichi]
                     どの黒玉も隣り合わない場合
